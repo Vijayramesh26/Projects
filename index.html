@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VIJAY RAMESH PROJECTS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to right, #f8fafc, #e0f2fe);
+      padding: 2rem;
+      color: #1f2937;
+      overflow-x: hidden;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.8rem;
+      font-weight: 800;
+      margin-bottom: 3rem;
+      color: #0f172a;
+      opacity: 0;
+      transform: translateY(-40px);
+      transition: all 1s ease;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .card {
+      background: white;
+      border-radius: 1rem;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.06);
+      padding: 1.5rem 2rem;
+      margin-bottom: 2rem;
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 0.8s ease-out;
+    }
+
+    .card.show,
+    h1.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .card h2 {
+      font-size: 1.2rem;
+      /* color: #2563eb; */
+      color: #000000;
+      margin-bottom: 0.8rem;
+    }
+
+    .card pre {
+      background-color: #0f172a;
+      color: #f1f5f9;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      overflow-x: auto;
+      font-size: 0.9rem;
+      margin-top: 0.5rem;
+    }
+
+    .card ol,
+    .card ul {
+      margin-left: 1.2rem;
+      font-size: 0.95rem;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 1rem;
+      color: #64748b;
+      margin-top: 2rem;
+    }
+
+    a {
+      padding-left: 2px;
+      font-size: 12px;
+      font-weight: light;
+      color: #3b82f6;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      .card {
+        padding: 1rem;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1 id="title">🚀 MY PROJECTS</h1>
+
+    <div class="card">
+      <h2>1. Facebook & Instagram Login Page Clone <a target="_blank" href="https://vijayramesh26.github.io/Facebook/"> Click to
+          view</a></h2>
+      <div class="project-meta">📅 2022 &nbsp; | &nbsp; 🖥️ Web Only</div>
+    </div>
+    <div class="card">
+      <h2>2. Spotify Login Page Clone <a target="_blank" href="https://vijayramesh26.github.io/spotify/"> Click to
+          view</a></h2>
+      <div class="project-meta">📅 2022 &nbsp; | &nbsp; 🖥️ Web Only</div>
+    </div>
+    <div class="card">
+      <h2>3. IFSC Locator - View Bank Details <a target="_blank" href="https://ifsc-locator-by-vijay.web.app/"> Click to
+          view</a></h2>
+      <div class="project-meta">📅 2023 &nbsp; | &nbsp; 🖥️ Responsive</div>
+    </div>
+    <div class="card">
+      <h2>4. Medapp - Medical Billing Application <a target="_blank" href="https://medapp-by-vijay.web.app/"> Click to
+          view</a></h2>
+      <div class="project-meta">📅 2023 &nbsp; | &nbsp; 🖥️ Web Only</div>
+    </div>
+    <div class="card">
+      <h2>5. Vue Hosting in Firebase <a target="_blank" href="https://vijayramesh26.github.io/vuehosting/"> Click to
+          view</a></h2>
+      <div class="project-meta">📅 2024 &nbsp; | &nbsp; 🖥️ Responsive</div>
+    </div>
+    <div class="card">
+      <h2>6. My Resume <a target="_blank" href="https://vijayramesh26.github.io/resume/"> Click to
+          view</a></h2>
+      <div class="project-meta">📅 2025 &nbsp; | &nbsp; 🖥️ Responsive</div>
+    </div>
+    <div class="card">
+      <h2>7. Portfolio <a target="_blank" href="https://vijayramesh-portfolio.web.app/"> Click to
+          view</a></h2>
+      <div class="project-meta">📅 2022 &nbsp; | &nbsp; 🖥️ Responsive</div>
+    </div>
+    <!-- <div class="card">
+      <h2>8. Facebook & Instagram Login Page Clone <a target="_blank" href="https://vijayramesh26.github.io/Facebook/"> Click to
+          view</a></h2>
+      <div class="project-meta">📅 2022 &nbsp; | &nbsp; 🖥️ Web Only</div>
+    </div> -->
+
+    <div class="footer">Built with ❤️ by VIJAY RAMESH</div>
+  </div>
+
+  <script>
+    // Show header after slight delay
+    window.addEventListener('load', () => {
+      document.getElementById('title').classList.add('show');
+    });
+
+    // Scroll reveal logic
+    const cards = document.querySelectorAll('.card');
+
+    const revealOnScroll = () => {
+      const triggerBottom = window.innerHeight * 0.85;
+      cards.forEach(card => {
+        const cardTop = card.getBoundingClientRect().top;
+        if (cardTop < triggerBottom) {
+          card.classList.add('show');
+        }
+      });
+    };
+
+    window.addEventListener('scroll', revealOnScroll);
+    window.addEventListener('load', revealOnScroll);
+  </script>
+</body>
+
+</html>
