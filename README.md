@@ -1,2 +1,15 @@
-# projects
-This repository contains a complete portfolio of my web projects. Each project is listed with its name, description, year of creation, type (Web Only or Responsive), and a link to view it online. It's a simple HTML-based and Vue JS showcase to quickly browse and explore everything I've built over time.
+# 🌐 My Projects Portfolio
+
+This repository contains a showcase of all my personal and professional web projects.
+
+Each project includes:
+- Project name
+- Year of creation
+- Type of view (Web Only or Responsive)
+- Brief description
+- Live demo link (if available)
+
+🔗 View the portfolio [here]([https://yourdomain.com](https://vijayramesh-portfolio.web.app/)  
+📁 All project files and information are organized in the HTML file.
+
+Feel free to explore!
