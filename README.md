@@ -9,7 +9,7 @@ Each project includes:
 - Brief description
 - Live demo link (if available)
 
-🔗 View the portfolio [Open here](https://vijayramesh-portfolio.web.app/) in Chrome 
+🔗 View the portfolio [Open here](https://vijayramesh-portfolio.web.app/) in Chrome.
 📁 All project files and information are organized in the HTML file.
 
 Feel free to explore!
