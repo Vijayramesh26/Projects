@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VIJAY RAMESH PROJECTS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+<style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to right, #f8fafc, #e0f2fe);
+      padding: 2rem;
+      color: #1f2937;
+      overflow-x: hidden;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.8rem;
+      font-weight: 800;
+      margin-bottom: 3rem;
+      color: #0f172a;
+      opacity: 0;
+      transform: translateY(-40px);
+      transition: all 1s ease;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .card {
+      background: white;
+      border-radius: 1rem;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.06);
+      padding: 1.5rem 2rem;
+      margin-bottom: 2rem;
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 0.8s ease-out;
+    }
+
+    .card.show,
+    h1.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .card h2 {
+      font-size: 1.2rem;
+      /* color: #2563eb; */
+      color: #000000;
+      margin-bottom: 0.8rem;
+    }
+
+    .card pre {
+      background-color: #0f172a;
+      color: #f1f5f9;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      overflow-x: auto;
+      font-size: 0.9rem;
+      margin-top: 0.5rem;
+    }
+
+    .card ol,
+    .card ul {
+      margin-left: 1.2rem;
+      font-size: 0.95rem;
+    }
+
+
+
+.card h2 {
+  font-size: 1.15rem;
+  margin: 0 0 6px;
+}
+
+.card h2 a {
+  font-size: 0.8rem;
+  margin-left: 6px;
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.meta {
+  font-size: 0.85rem;
+  color: #475569;
+  margin-bottom: 10px;
+}
+
+.tags span {
+  display: inline-block;
+  background: #e0f2fe;
+  color: #0369a1;
+  padding: 4px 8px;
+  margin: 4px 6px 0 0;
+  border-radius: 6px;
+  font-size: 0.75rem;
+}
+
+.toggle {
+  display: inline-block;
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  color: #2563eb;
+}
+
+.details {
+  display: none;
+  margin-top: 12px;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: #334155;
+}
+
+.details strong {
+  color: #0f172a;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 40px;
+  color: #64748b;
+}
+   a {
+      padding-left: 2px;
+      font-size: 12px;
+      font-weight: light;
+      color: #3b82f6;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      .card {
+        padding: 1rem;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+    }
+</style>
+</head>
+
+<body>
+<div class="container">
+ <h1 id="title">🌐 My Projects </h1>
+
+<!-- 2026 -->
+<div class="card">
+  <h2>Hire Stream <a href="https://cover-letter-by-vijay.web.app" target="_blank">View</a></h2>
+  <div class="meta">📅 2026 &nbsp; | &nbsp; 📱 Web & Mobile</div>
+  <div class="tags"><span>Vue.js</span><span>Vuetify</span><span>Vuex</span><span>Axios</span><span>Firebase</span></div>
+  <span class="toggle" onclick="toggle(this)">▶ Show Details</span>
+  <div class="details">
+    <p><strong>Description:</strong> A productivity tool that helps users generate customized cover letters and recruiter messages. Supports sharing via WhatsApp, Email, LinkedIn, and copy-to-clipboard functionality.</p>
+    <p><strong>Credentials:</strong> Not required</p>
+  </div>
+</div>
+
+<!-- 2025–2026 -->
+<div class="card">
+  <h2>eKYC Form <a href="https://kyc-form-by-vijay.web.app" target="_blank">View</a></h2>
+  <div class="meta">📅 2025–2026 &nbsp; | &nbsp; 📱 Web & Mobile</div>
+  <div class="tags"><span>Vue</span><span>Vuetify</span><span>Golang</span><span>Gin</span><span>MariaDB</span><span>Firebase</span><span>Render</span></div>
+  <span class="toggle" onclick="toggle(this)">▶ Show Details</span>
+  <div class="details">
+    <p><strong>Description:</strong> A dynamic and flexible KYC form application designed for non-RI clients. It collects user information and automatically fills structured KYC forms used by trading and financial platforms.</p>
+    <p><strong>Credentials:</strong> Not required</p>
+  </div>
+</div>
+
+<div class="card">
+  <h2>Portfolio Viewer <a href="https://portfolio-by-vijay.web.app" target="_blank">View</a></h2>
+  <div class="meta">📅 2025–2026 &nbsp; | &nbsp; 📱 Web & Mobile</div>
+  <div class="tags"><span>Vue</span><span>Vuetify</span><span>Golang</span><span>MariaDB</span><span>Firebase</span></div>
+  <span class="toggle" onclick="toggle(this)">▶ Show Details</span>
+  <div class="details">
+    <p><strong>Description:</strong> A dynamic portfolio viewer that shows users a real-time preview of how their portfolio or webpage will look. Each registered user gets a personalized, data-driven portfolio view.</p>
+    <p><strong>Credentials:</strong> Not required</p>
+  </div>
+</div>
+
+<div class="card">
+  <h2>Portfolio.OS (Admin) <a href="https://portfolio-admin-by-vijay.web.app" target="_blank">View</a></h2>
+  <div class="meta">📅 2025–2026 &nbsp; | &nbsp; 📱 Web & Mobile</div>
+  <div class="tags"><span>Vue</span><span>Vuetify</span><span>Golang</span><span>MariaDB</span><span>Firebase</span></div>
+  <span class="toggle" onclick="toggle(this)">▶ Show Details</span>
+  <div class="details">
+    <p><strong>Description:</strong> An admin-only application used to create and manage dynamic portfolios. Admins collect user details, generate customized webpages, and provide shareable URLs for clients.</p>
+    <p><strong>Credentials:</strong> admin@portfolio.com / admin@123</p>
+  </div>
+</div>
+
+<!-- 2025 -->
+<div class="card">
+  <h2>TN EB Tariff <a href="https://tn-eb-tariff-by-vijay.web.app" target="_blank">View</a></h2>
+  <div class="meta">📅 2025 &nbsp; | &nbsp; 📱 Web & Mobile</div>
+  <div class="tags"><span>Vue</span><span>Vuetify</span><span>Vuex</span><span>Firebase</span></div>
+  <span class="toggle" onclick="toggle(this)">▶ Show Details</span>
+  <div class="details">
+    <p><strong>Description:</strong> A simple and user-friendly application to track Tamil Nadu Electricity Board (TNEB) tariffs for both domestic and commercial usage. Displays tariff calculations and amount breakups in an easy-to-understand format. </p>
+    <p><strong>Credentials:</strong> Not required</p>
+  </div>
+</div>
+
+<div class="card">
+  <h2>Expense Tracker <a href="https://notebook-by-vijay.web.app" target="_blank">View</a></h2>
+  <div class="meta">📅 2025 &nbsp; | &nbsp; 📱 Web & Mobile</div>
+  <div class="tags"><span>Vue</span><span>Vuetify</span><span>Vuex</span><span>Firebase</span></div>
+  <span class="toggle" onclick="toggle(this)">▶ Show Details</span>
+  <div class="details">
+    <p><strong>Description:</strong> A basic expense tracking application to manage income and expenses, including payer, receiver, amount, and payment mode.</p>
+    <p><strong>Credentials:</strong> Not required</p>
+  </div>
+</div>
+
+<div class="card">
+  <h2>Flight App (FLIGHTMS) <a href="https://flightapp-by-vijay.web.app" target="_blank">View</a></h2>
+  <div class="meta">📅 2025 &nbsp; | &nbsp; 📱 Web & Mobile</div>
+  <div class="tags"><span>Nuxt</span><span>Vue 3</span><span>Vuetify 3</span><span>Pinia</span><span>Firebase</span></div>
+  <span class="toggle" onclick="toggle(this)">▶ Show Details</span>
+  <div class="details">
+    <p><strong>Description:</strong> A fully responsive flight management system featuring dashboards for flight schedules, bookings, analytics, and real-time tracking. Optimized for both desktop and mobile users.</p>
+    <p><strong>Credentials:</strong> Not required</p>
+  </div>
+</div>
+
+<div class="card">
+  <h2>Customizable Portfolio <a href="https://rameshvijay-portfolio.web.app" target="_blank">View</a></h2>
+  <div class="meta">📅 2025 &nbsp; | &nbsp; 📱 Web & Mobile</div>
+  <div class="tags"><span>Vue 3</span><span>Vuetify 3</span><span>Vuex</span><span>Firebase</span></div>
+  <span class="toggle" onclick="toggle(this)">▶ Show Details</span>
+  <div class="details">
+    <p><strong>Description:</strong> A lightweight, animated, and customizable portfolio template built with Vue 3 and Vuetify 3. Developers can easily personalize content by updating values in the store (index.js).</p>
+    <p><strong>Credentials:</strong> Not required</p>
+  </div>
+</div>
+
+<!-- 2024 -->
+<div class="card">
+  <h2>Civil Quotation <a href="https://civil-quotation-by-vijay.web.app" target="_blank">View</a></h2>
+  <div class="meta">📅 2024 &nbsp; | &nbsp; 📱 Web & Mobile</div>
+  <div class="tags"><span>Vue</span><span>Vuetify</span><span>Firebase</span></div>
+  <span class="toggle" onclick="toggle(this)">▶ Show Details</span>
+  <div class="details">
+    <p><strong>Description:</strong> A quotation-building tool designed for small builders and carpenters to quickly generate professional quotations for their clients. The application also supports Tamil PDF downloads, making it accessible for local users. </p>
+    <p><strong>Credentials:</strong> Not required</p>
+  </div>
+</div>
+
+<div class="card">
+  <h2>Markdown Editor <a href="https://markdown-by-vijay.web.app" target="_blank">View</a></h2>
+  <div class="meta">📅 2024 &nbsp; | &nbsp; 📱 Web & Mobile</div>
+  <div class="tags"><span>Vue</span><span>Vuetify</span><span>Firebase</span></div>
+  <span class="toggle" onclick="toggle(this)">▶ Show Details</span>
+  <div class="details">
+    <p><strong>Description:</strong> A full-featured markdown editor that converts rich-text documents into Markdown format. Users can export files as Markdown or Word (DOCX), making it ideal for technical documentation. </p>
+    <p><strong>Credentials:</strong> Not required</p>
+  </div>
+</div>
+
+<div class="card">
+  <h2>Quotation <a href="https://quotation-by-vijay.web.app" target="_blank">View</a></h2>
+  <div class="meta">📅 2024 &nbsp; | &nbsp; 📱 Web & Mobile</div>
+  <div class="tags"><span>Vue</span><span>Vuetify</span><span>Firebase</span></div>
+  <span class="toggle" onclick="toggle(this)">▶ Show Details</span>
+  <div class="details">
+    <p><strong>Description:</strong> A quotation generator built for small businesses to create and share professional quotations. Includes Tamil PDF download support for better regional accessibility.</p>
+    <p><strong>Credentials:</strong> Not required</p>
+  </div>
+</div>
+
+<div class="card">
+  <h2>ChatAI <a href="https://chat-ai-by-vijay.web.app" target="_blank">View</a></h2>
+  <div class="meta">📅 2024 &nbsp; | &nbsp; 📱 Web & Mobile</div>
+  <div class="tags"><span>Vue</span><span>Vuetify</span><span>Gemini API</span><span>Firebase</span></div>
+  <span class="toggle" onclick="toggle(this)">▶ Show Details</span>
+  <div class="details">
+    <p><strong>Description:</strong> An AI-powered chatbot application integrated with the Gemini API to provide intelligent responses to user queries in real time.</p>
+    <p><strong>Credentials:</strong> Not required</p>
+  </div>
+</div>
+
+<div class="card">
+  <h2>Vue Hosting in Firebase <a href="https://vijayramesh26.github.io/vuehosting/" target="_blank">View</a></h2>
+  <div class="meta">📅 2024 &nbsp; | &nbsp; 📱 Web & Mobile</div>
+  <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Firebase</span></div>
+  <span class="toggle" onclick="toggle(this)">▶ Show Details</span>
+  <div class="details">
+    <p><strong>Description:</strong> A step-by-step guide and cheat sheet for deploying Vue applications to Firebase Hosting, aimed at helping developers quickly understand the deployment process.</p>
+    <p><strong>Credentials:</strong> Not required</p>
+  </div>
+</div>
+
+<!-- 2023 -->
+<div class="card">
+  <h2>IFSC Locator <a href="https://ifsc-locator-by-vijay.web.app" target="_blank">View</a></h2>
+  <div class="meta">📅 2023 &nbsp; | &nbsp; 📱 Web & Mobile</div>
+  <div class="tags"><span>Vue</span><span>Vuetify</span><span>Firebase</span></div>
+  <span class="toggle" onclick="toggle(this)">▶ Show Details</span>
+  <div class="details">
+    <p><strong>Description:</strong> A fast and reliable IFSC code lookup tool that retrieves complete bank and branch details. Users can instantly view bank name, branch, address, state, city, district, MICR code, and transaction facilities such as IMPS, NEFT, RTGS, UPI, and SWIFT.</p>
+    <p><strong>Credentials:</strong> Not required</p>
+  </div>
+</div>
+
+<div class="card">
+  <h2>MEDAPP <a href="https://medapp-by-vijay.web.app" target="_blank">View</a></h2>
+  <div class="meta">📅 2023 &nbsp; | &nbsp; 🖥️ Web</div>
+  <div class="tags"><span>Vue</span><span>Golang</span><span>MariaDB</span></div>
+  <span class="toggle" onclick="toggle(this)">▶ Show Details</span>
+  <div class="details">
+   <ul>
+  <li>
+    <strong>Description:</strong>
+    <ul>
+      <li>A full-fledged medical billing and inventory management system with multiple user roles</li>
+    </ul>
+  </li>
+
+  <li>
+    <strong>User Roles & Responsibilities:</strong>
+    <ul>
+      <li><strong>Biller:</strong> Medication billing</li>
+      <li><strong>Inventory:</strong> Medicine and stock management</li>
+      <li><strong>Manager:</strong> Complete operational overview</li>
+      <li><strong>Admin:</strong> User management and administrative insights</li>
+    </ul>
+  </li>
+
+  <li>
+    <strong>Credentials:</strong>
+    <ul>
+      <li><strong>Biller:</strong> vijay</li>
+      <li><strong>Manager:</strong> vikram</li>
+      <li><strong>Inventory:</strong> vinoth</li>
+      <li><strong>Admin:</strong> vignesh</li>
+      <li><strong>Password (common for all):</strong> 123</li>
+    </ul>
+  </li>
+</ul>
+
+  </div>
+</div>
+
+<!-- 2022 -->
+<div class="card">
+  <h2>Instagram & Facebook Clone <a href="https://vijayramesh26.github.io/Facebook/" target="_blank">View</a></h2>
+  <div class="meta">📅 2022 &nbsp; | &nbsp; 🖥️ Web</div>
+  <div class="tags"><span>HTML</span><span>CSS</span></div>
+  <span class="toggle" onclick="toggle(this)">▶ Show Details</span>
+  <div class="details">
+    <p><strong>Description:</strong> Responsive UI clones of Instagram and Facebook login and signup pages built using pure HTML and CSS. Focused on pixel-perfect design and responsiveness without using frameworks or libraries.</p>
+    <p><strong>Credentials:</strong> Not required</p>
+  </div>
+</div>
+
+<div class="card">
+  <h2>Spotify Clone <a href="https://spotify-clone-by-vijay.web.app" target="_blank">View</a></h2>
+  <div class="meta">📅 2022 &nbsp; | &nbsp; 🖥️ Web</div>
+  <div class="tags"><span>HTML</span><span>CSS</span></div>
+  <span class="toggle" onclick="toggle(this)">▶ Show Details</span>
+  <div class="details">
+    <p><strong>Description:</strong> A visually accurate and responsive clone of Spotify’s sign-up page built entirely with HTML and CSS. Recreates the original layout, styling, and form elements for a smooth user experience.</p>
+    <p><strong>Credentials:</strong> Not required</p>
+  </div>
+</div>
+
+<div class="footer">Built with ❤️ by VIJAY RAMESH</div>
+</div>
+
+<script>
+
+  // Show header after slight delay
+    window.addEventListener('load', () => {
+      document.getElementById('title').classList.add('show');
+    });
+
+    // Scroll reveal logic
+    const cards = document.querySelectorAll('.card');
+
+    const revealOnScroll = () => {
+      const triggerBottom = window.innerHeight * 0.85;
+      cards.forEach(card => {
+        const cardTop = card.getBoundingClientRect().top;
+        if (cardTop < triggerBottom) {
+          card.classList.add('show');
+        }
+      });
+    };
+
+    window.addEventListener('scroll', revealOnScroll);
+    window.addEventListener('load', revealOnScroll);
+  
+  function toggle(el) {
+  const d = el.nextElementSibling;
+  const open = d.style.display === "block";
+  d.style.display = open ? "none" : "block";
+  el.textContent = open ? "▶ Show Details" : "▼ Hide Details";
+}
+</script>
+
+</body>
+</html>
